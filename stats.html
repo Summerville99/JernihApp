@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Statistik | Jernih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo small">JR</div>
+      <div class="title">
+        <h1>Statistik Pengguna</h1>
+        <p id="user-display"></p>
+      </div>
+    </header>
+    <section class="card">
+      <h2>Riwayat Permainan</h2>
+      <table id="stats-table">
+        <thead><tr><th>Tanggal</th><th>Skor (%)</th><th>Durasi (menit)</th></tr></thead>
+        <tbody id="stats-body"></tbody>
+      </table>
+      <div style="margin-top:12px;"><button id="backBtn">Kembali</button></div>
+    </section>
+  </div>
+  <script src="stats.js"></script>
+</body>
+</html>

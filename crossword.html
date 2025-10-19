@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teka-Teki | Jernih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo small">JR</div>
+      <div class="title">
+        <h1>Teka-Teki Edukatif — Kurangi Brainrot</h1>
+        <p id="user-display"></p>
+      </div>
+    </header>
+    <section class="timer-box">
+      <h3>Waktu Tersisa: <span id="timer">--:--</span></h3>
+      <p class="sub">Waktu otomatis: 1 menit per soal.</p>
+    </section>
+    <main>
+      <section class="card crossword">
+        <h2>Teka-Teki Silang</h2>
+        <div id="crossword-grid" class="grid"></div>
+        <div id="clues" class="clues">
+          <h3>Petunjuk Mendatar</h3>
+          <ul id="across-list"></ul>
+        </div>
+        <button id="submitBtn" class="submit-btn">Periksa Jawaban</button>
+      </section>
+      <section id="result-section" class="card result hidden">
+        <h2>Hasil Teka-Teki</h2>
+        <p id="score-text"></p>
+        <div id="feedback"></div>
+        <div class="result-buttons">
+          <button id="downloadBtn" class="hidden">Unduh Hasil</button>
+          <button id="statsBtn">Lihat Statistik</button>
+          <button id="backBtn">Kembali</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="crossword.js"></script>
+</body>
+</html>
